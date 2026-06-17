@@ -1,3 +1,16 @@
 #more {
     display: none;
 }
+#mmore {
+    display: none;
+}
+.card-content{
+    width: 200px;
+    
+}
+#cards{
+   
+    display: flex;
+    flex-direction: row;
+  
+}
