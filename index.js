@@ -1,11 +1,11 @@
-const myFunction = () =>{
-    // if(document.getElementById(myBtn).innerHTML.valueOf=== "Read More"){
-        var dots = document.getElementById("dots");
-        var btn = document.getElementById("myBtn");
-        var mr = document.getElementById("more");
-       
-
-        if(dots.style.display==="none"){
+    console.log("Hii");
+    const btns = document.querySelectorAll(".myBtn");
+        btns.forEach(btn => {
+            const card = btn.closest(".card-content");
+            const mr = card.querySelector(".more");
+            const dots = card.querySelector(".dots");
+            btn.addEventListener("click",()=>{
+            if(dots.style.display==="none"){
             dots.style.display = "inline";
             mr.style.display = "none";
         }
@@ -14,26 +14,7 @@ const myFunction = () =>{
             btn.innerHTML = "Read Less";
             mr.style.display = "inline";
         }
-
+            })
+        });
        
     
-}
-const mmyFunction = () =>{
-    
-        var ddots = document.getElementById("ddots");
-        var bbtn = document.getElementById("myyBtn");
-        var mrr = document.getElementById("mmore");
-
-      
-        
-        if(ddots.style.display==="none"){
-            ddots.style.display = "inline";
-            mrr.style.display = "none";
-        }
-        else{
-            ddots.style.display="none"
-            bbtn.innerHTML = "Read Less";
-            mrr.style.display = "inline";
-        }
-    
-}
